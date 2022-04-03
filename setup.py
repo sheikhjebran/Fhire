@@ -17,7 +17,7 @@ def read(filename):
 
 setup(
     name='Fhire',
-    version='0.0.1',
+    version='0.0.2',
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
@@ -27,7 +27,7 @@ setup(
     description='Fhire framework for Python',
     long_description=read("README.md"),
     long_description_content_type='text/markdown',
-    url='https://github.com/sheikhjebran/fluentassert',
+    url='https://github.com/sheikhjebran/Fhire',
     author='Sheikh Jebran',
     author_email='sheikhjebran@gmail.com',
     python_requires='>3.5.0',
