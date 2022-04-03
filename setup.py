@@ -17,7 +17,7 @@ def read(filename):
 
 setup(
     name='Fhire',
-    version='0.0.4',
+    version='0.0.5',
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
