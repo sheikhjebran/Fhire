@@ -1,3 +1,4 @@
-from .base import FhireCheck
+from .fhire import Fhire
+from .base import Base
 
-__all__ = [FhireCheck]
+__all__ = [Fhire, Base]

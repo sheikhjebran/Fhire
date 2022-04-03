@@ -6,7 +6,7 @@ from ..exceptions import FhireError
 
 
 class Base:
-    ASSERTIONS_PACKAGE = 'fhire.fhire_module'
+    ASSERTIONS_PACKAGE = 'fhire.fhire_base'
 
     def _import_assertion_modules(self):
         ass = importlib.import_module(Base.ASSERTIONS_PACKAGE)
