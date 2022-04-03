@@ -1,3 +1,3 @@
-from .fhire import Fhire
+from .fhire_check import Fhire
 
 __all__ = [Fhire]
