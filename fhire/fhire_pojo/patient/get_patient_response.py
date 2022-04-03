@@ -582,3 +582,5 @@ def get_patient_response_from_dict(s: Any) -> GetPatient:
 
 def get_patient_response_to_dict(x: GetPatient) -> Any:
     return to_class(GetPatient, x)
+
+

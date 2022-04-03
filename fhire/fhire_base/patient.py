@@ -4,17 +4,18 @@ from fhire.fhire_pojo.patient.create_patient_response import create_patient_resp
 from fhire.fhire_pojo.patient.get_patient_response import get_patient_response_from_dict
 
 
-def parse_https_get_patient_response(check_obj):
-    try:
-        return get_patient_response_from_dict(json.loads(check_obj._val))
-    except AssertionError as e:
-        raise FhireError(
-            '{} Invalid response given to parse'.format(check_obj._val)) from e
+class Patient:
 
+    def parse_https_get_patient_response(self):
+        try:
+            return get_patient_response_from_dict(json.loads(self.object))
+        except AssertionError as e:
+            raise FhireError(
+                '{} Invalid response given to parse'.format(self.object)) from e
 
-def parse_https_post_patient_response(check_obj):
-    try:
-        return create_patient_response_from_dict(json.loads(check_obj._val))
-    except AssertionError as e:
-        raise FhireError(
-            '{} Invalid response given to parse'.format(check_obj._val)) from e
+    def parse_https_post_patient_response(self):
+        try:
+            return create_patient_response_from_dict(json.loads(self.object))
+        except AssertionError as e:
+            raise FhireError(
+                '{} Invalid response given to parse'.format(self.object)) from e
