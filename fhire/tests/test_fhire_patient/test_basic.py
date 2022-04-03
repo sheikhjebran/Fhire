@@ -1,5 +1,5 @@
 import unittest
-from fhire.classes.fhire_check import Fhire
+from fhire.classes.base import Fhire
 
 
 from fhire.exceptions import FhireError
