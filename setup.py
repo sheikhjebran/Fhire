@@ -17,11 +17,14 @@ def read(filename):
 
 setup(
     name='Fhire',
-    version='0.0.2',
+    version='0.0.4',
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
         'pyyaml>=4.2b1',
+        'python-dateutil~=2.8.2',
+        'setuptools~=60.2.0',
+        'requests~=2.27.1'
     ],
     license='MIT License',
     description='Fhire framework for Python',
