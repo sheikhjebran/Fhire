@@ -7,14 +7,14 @@ from fhire.fhire_pojo.observation.post_observation import post_observation_from_
 
 class Observation:
 
-    def parse_https_get_procedure_response(self):
+    def parse_https_get_observation_response(self):
         try:
             return get_observation_from_dict(json.loads(self.object))
         except AssertionError as e:
             raise FhireError(
                 '{} Invalid response given to parse'.format(self.object)) from e
 
-    def parse_https_post_procedure_response(self):
+    def parse_https_post_observation_response(self):
         try:
             return post_observation_from_dict(json.loads(self.object))
         except AssertionError as e:
