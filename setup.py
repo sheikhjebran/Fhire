@@ -17,14 +17,14 @@ def read(filename):
 
 setup(
     name='Fhire',
-    version='0.0.8',
+    version='0.0.9',
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
         'pyyaml>=4.2b1',
         'setuptools>=60.2.0',
         'certifi>=2022.6.15',
-        'charset-normalizer>=2.1.1',
+        'charset-normalizer>=2.1.0',
         'idna>=3.3',
         'python-dateutil>=2.8.2',
         'requests>=2.28.1',
