@@ -17,7 +17,7 @@ def read(filename):
 
 setup(
     name='Fhire',
-    version='0.0.7',
+    version='0.0.8',
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
@@ -29,7 +29,6 @@ setup(
         'python-dateutil>=2.8.2',
         'requests>=2.28.1',
         'six>=1.16.0',
-        'urllib3>=1.26.12'
     ],
     license='MIT License',
     description='Fhire framework for Python',
