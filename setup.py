@@ -22,9 +22,14 @@ setup(
     include_package_data=True,
     install_requires=[
         'pyyaml>=4.2b1',
-        'python-dateutil>=2.8.2',
         'setuptools>=60.2.0',
-        'requests>=2.27.1'
+        'certifi>=2022.6.15',
+        'charset-normalizer>=2.1.1',
+        'idna>=3.3',
+        'python-dateutil>=2.8.2',
+        'requests>=2.28.1',
+        'six>=1.16.0',
+        'urllib3>=1.26.12'
     ],
     license='MIT License',
     description='Fhire framework for Python',
